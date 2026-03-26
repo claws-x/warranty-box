@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model version="1.0" type="com.apple.xcode.coredata" name="WarrantyBox" minimumOSVersion="16.0">
+  <entity name="WarrantyItem" representedClassName="WarrantyItem">
+    <attribute name="id" attributeType="UUID" optional="NO"/>
+    <attribute name="productName" attributeType="String" optional="NO"/>
+    <attribute name="category" attributeType="String" optional="NO"/>
+    <attribute name="purchaseDate" attributeType="Date" optional="NO"/>
+    <attribute name="warrantyMonths" attributeType="Integer 32" optional="NO"/>
+    <attribute name="storeName" attributeType="String"/>
+    <attribute name="notes" attributeType="String"/>
+    <attribute name="imageData" attributeType="Binary Data"/>
+    <attribute name="createdAt" attributeType="Date" optional="NO"/>
+    <attribute name="reminderEnabled" attributeType="Boolean" optional="NO"/>
+  </entity>
+</model>
