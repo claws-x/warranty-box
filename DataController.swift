@@ -65,7 +65,7 @@ class DataController: ObservableObject {
     
     /// 获取所有保修项目（按到期时间排序）
     func fetchWarrantyItems() -> [WarrantyItem] {
-        let request: NSFetchRequest<WarrantyItem> = WarrantyItem.fetchRequest()
+        let request: NSFetchRequest<WarrantyItem> = WarrantyItem.fetchRequest() as! NSFetchRequest<WarrantyItem>
         request.sortDescriptors = [NSSortDescriptor(key: "purchaseDate", ascending: false)]
         
         do {
@@ -84,7 +84,7 @@ class DataController: ObservableObject {
     
     /// 搜索保修项目
     func searchWarrantyItems(query: String) -> [WarrantyItem] {
-        let request: NSFetchRequest<WarrantyItem> = WarrantyItem.fetchRequest()
+        let request: NSFetchRequest<WarrantyItem> = WarrantyItem.fetchRequest() as! NSFetchRequest<WarrantyItem>
         request.predicate = NSPredicate(format: "productName CONTAINS[cd] %@ OR storeName CONTAINS[cd] %@", query, query)
         
         do {
@@ -97,7 +97,7 @@ class DataController: ObservableObject {
     
     /// 按类别筛选
     func filterByCategory(_ category: String) -> [WarrantyItem] {
-        let request: NSFetchRequest<WarrantyItem> = WarrantyItem.fetchRequest()
+        let request: NSFetchRequest<WarrantyItem> = WarrantyItem.fetchRequest() as! NSFetchRequest<WarrantyItem>
         request.predicate = NSPredicate(format: "category == %@", category)
         
         do {
