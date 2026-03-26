@@ -2,7 +2,8 @@
 
 **版本**: 1.0.0  
 **最低系统要求**: iOS 16.0+  
-**定价**: $0.99
+**定价**: $0.99  
+**状态**: ✅ 开发完成，待发布
 
 ---
 
@@ -70,16 +71,29 @@ WarrantyBox/
 
 ---
 
-## 📋 待办事项
+## 📋 发布准备状态
 
-- [ ] 应用图标设计
-- [ ] 截图制作
-- [ ] App Store 描述文案
-- [ ] 隐私政策页面
-- [ ] 多语言支持（英文）
+| 任务 | 状态 | 文档 |
+|------|------|------|
+| 核心功能开发 | ✅ 完成 | - |
+| 编译测试 | ✅ 通过 | - |
+| PRD 文档 | ✅ 完成 | `docs/requirements/WarrantyBox_PRD.md` |
+| 测试计划 | ✅ 完成 | `docs/test-plans/WarrantyBox_TestPlan.md` |
+| App Store 文案 | ✅ 完成 | `docs/AppStore/WarrantyBox_Listing.md` |
+| 隐私政策 | ✅ 完成 | `docs/AppStore/Privacy_Policy.md` |
+| 应用图标 | ⏳ 待完成 | `docs/AppStore/Icon_Creation_Quick.md` |
+| 截图制作 | ⏳ 待完成 | `docs/AppStore/Screenshots/README.md` |
+| 真机测试 | ⏳ 待完成 | - |
 
 ---
 
 ## 📄 许可证
 
 Copyright © 2026 Claws X. All rights reserved.
+
+---
+
+## 📞 支持
+
+- 邮箱：support@clawsx.com
+- 网站：https://clawsx.com
